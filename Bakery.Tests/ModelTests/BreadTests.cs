@@ -7,10 +7,10 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void ItemConstructor_CreatesInstanceOfItem_Item()
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Item newItem = new Item();
-      Assert.AreEqual(typeof(Item), newItem.GetType());
+      Bread myBread = new Bread();
+      Assert.AreEqual(typeof(Bread), myBread.GetType());
     }
     // Test methods will go here.
 
