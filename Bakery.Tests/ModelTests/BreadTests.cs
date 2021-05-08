@@ -6,12 +6,12 @@ namespace Bakery.Tests
   [TestClass]
   public class BreadTests
   {
-    // [TestMethod]
-    // public void BreadConstructor_CreatesInstanceOfBread_Bread()
-    // {
-    //   Bread myBread = new Bread(1);
-    //   Assert.AreEqual(typeof(Bread), myBread.GetType());
-    // }
+    [TestMethod]
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
+    {
+      Bread myBread = new Bread(1);
+      Assert.AreEqual(typeof(Bread), myBread.GetType());
+    }
     [TestMethod]
     public void BreadTotal_GivesATotalForOneLoafOfBread_int()
     {
