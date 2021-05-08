@@ -1,6 +1,6 @@
 namespace Bakery.Models
 {
-  public class Pastery
+  public class Pastry
   {
 
     // properties, methods, etc. will go here.
