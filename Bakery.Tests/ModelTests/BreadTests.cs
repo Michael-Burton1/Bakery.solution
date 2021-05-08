@@ -19,11 +19,18 @@ namespace Bakery.Tests
       Bread myBread = new Bread(1);
       Assert.AreEqual(5, myBread.BreadTotal(loavesOrdered));
     }
-     [TestMethod]
+    [TestMethod]
     public void BreadTotal_GivesATotalForTwoLoavesOfBread_int()
     {
       int loavesOrdered=2;
       Bread myBread = new Bread(2);
+      Assert.AreEqual(10, myBread.BreadTotal(loavesOrdered));
+    }
+    [TestMethod]
+    public void BreadTotal_GivesATotalForTwoLoavesOfBread_int()
+    {
+      int loavesOrdered=3;
+      Bread myBread = new Bread(3);
       Assert.AreEqual(10, myBread.BreadTotal(loavesOrdered));
     }
   }
