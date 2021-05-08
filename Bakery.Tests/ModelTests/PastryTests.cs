@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName.Models;
+using Bakery.Models;
 
-namespace ProjectName.Tests
+namespace Bakery.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class PasteryTests
   {
     [TestMethod]
     public void ItemConstructor_CreatesInstanceOfItem_Item()

@@ -1,6 +1,6 @@
-namespace ProjectName.Models
+namespace Bakery.Models
 {
-  public class Item
+  public class Pastery
   {
 
     // properties, methods, etc. will go here.
