@@ -2,8 +2,15 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-
-    // properties, methods, etc. will go here.
-
+    public int NumberOfOrderedPastries {get; set;}
+    public Pastry(int numberOfOrderedPastries)
+    {
+      NumberOfOrderedPastries = numberOfOrderedPastries;
+    }
+    public int PastryTotal(int numberOfOrderedPastries)
+    {
+      int PastryCost = 1;
+      return PastryCost; 
+    }
   }
 }
