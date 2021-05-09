@@ -24,5 +24,12 @@ namespace Bakery.Tests
       Pastry myPastry = new Pastry(1);
       Assert.AreEqual(2, myPastry.PastryTotal(pastriesOrdered));
     }
+    [TestMethod]
+    public void PastryTotal_GivesATotalForTwoPastries_int()
+    {
+      int pastriesOrdered=2;
+      Pastry myPastry = new Pastry(2);
+      Assert.AreEqual(4, myPastry.PastryTotal(pastriesOrdered));
+    }
   }
 }
