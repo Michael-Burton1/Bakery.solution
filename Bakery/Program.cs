@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 
-namespace TriangleDetector
+namespace Bakery.Models
 {
   public class Program
   {
@@ -13,6 +13,9 @@ namespace TriangleDetector
       Console.WriteLine("We have a couple of specials that we are running today:");
       Console.WriteLine("Bread: buy two loaves($5/each) get the thrird one free.");
       Console.WriteLine("Pastries: 1 for $2 or 3 for $5");
+      Console.WriteLine("How Many Loaves of bread would you like to order?");
+      Console.WriteLine("How many pastries would you like to order?");
+      Console.WriteLine("Thank you for your order. You total comes to: $");
 
     }
   }
