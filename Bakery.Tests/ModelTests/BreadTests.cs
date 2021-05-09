@@ -27,7 +27,7 @@ namespace Bakery.Tests
       Assert.AreEqual(10, myBread.BreadTotal(loavesOrdered));
     }
     [TestMethod]
-    public void BreadTotal_GivesATotalForTwoLoavesOfBread_int()
+    public void BreadTotal_GivesATotalForThreeLoavesOfBread_int()
     {
       int loavesOrdered=3;
       Bread myBread = new Bread(3);

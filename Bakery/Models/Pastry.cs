@@ -9,8 +9,13 @@ namespace Bakery.Models
     }
     public int PastryTotal(int numberOfOrderedPastries)
     {
-      int PastryCost = 1;
-      return PastryCost; 
+      if (numberOfOrderedPastries < 2)
+      {
+        int pastryCost = numberOfOrderedPastries * 2;
+        return pastryCost;
+      } else {
+        return -1;
+      }
     }
   }
 }
