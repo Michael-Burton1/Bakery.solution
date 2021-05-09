@@ -31,5 +31,26 @@ namespace Bakery.Tests
       Pastry myPastry = new Pastry(2);
       Assert.AreEqual(4, myPastry.PastryTotal(pastriesOrdered));
     }
+    [TestMethod]
+    public void PastryTotal_GivesATotalForThreePastries_int()
+    {
+      int pastriesOrdered=3;
+      Pastry myPastry = new Pastry(3);
+      Assert.AreEqual(5, myPastry.PastryTotal(pastriesOrdered));
+    }
+    [TestMethod]
+    public void PastryTotal_GivesATotalForFivePastries_int()
+    {
+      int pastriesOrdered=5;
+      Pastry myPastry = new Pastry(5);
+      Assert.AreEqual(9, myPastry.PastryTotal(pastriesOrdered));
+    }
+    [TestMethod]
+    public void PastryTotal_GivesATotalForSixPastries_int()
+    {
+      int pastriesOrdered=6;
+      Pastry myPastry = new Pastry(6);
+      Assert.AreEqual(10, myPastry.PastryTotal(pastriesOrdered));
+    }
   }
 }
