@@ -16,7 +16,17 @@ namespace Bakery.Models
       int numberOfOrderedLoaves= int.Parse(Console.ReadLine());
       Console.WriteLine("Pastries: 1 for $2 or 3 for $5");
       Console.WriteLine("How many pastries would you like to order?");
-      Console.WriteLine("Thank you for your order. You total comes to: $");
+      int numberOfOrderedPastries= int.Parse(Console.ReadLine());
+      Int costForBread = int.BreadCost(numberOfOrderedLoaves);
+      Int costForPastries = int.PastryCost(numberOfOrderedPastries);
+      int tip= 250;
+      int total=tip +costForBread+ costForPastries;
+      Console.WriteLine("Thank you for your order.");
+      Console.WriteLine($"Amount due for Bread: ${costForBread}" );
+      Console.WriteLine($"Amount due for Pastries: ${costForPastries}");
+      Console.WriteLine($"Amount left for tip: ${tip} (very generous!)");
+      Console.WriteLine($"Total amount owed today: ${total}");
+
 
     }
   }
