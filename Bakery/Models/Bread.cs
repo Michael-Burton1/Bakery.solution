@@ -8,7 +8,7 @@ namespace Bakery.Models
     {
       NumberOfOrderedLoaves = numberOfOrderedLoaves;
     }
-    // properties, methods, etc. will go here.
+
     public int BreadTotal(int numberOfOrderedLoaves)
     {
       int numberOfFreeLoaves= numberOfOrderedLoaves/3;
