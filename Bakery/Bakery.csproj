@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <!-- outputType goes here -->
+        <OuputType>Exe</OuputType>
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 </Project>
