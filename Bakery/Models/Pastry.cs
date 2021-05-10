@@ -14,7 +14,12 @@ namespace Bakery.Models
         int pastryCost = numberOfOrderedPastries * 2;
         return pastryCost;
       } else {
-        return -1;
+        int sets= numberOfOrderedPastries/3;
+        int leftovers= numberOfOrderedPastries % 3;
+        int costOfSets= sets * 5;
+        int costOfLeftovers= leftovers * 2;
+        int PastryCost = costOfSets + costOfLeftovers; 
+        return PastryCost;
       }
     }
   }
