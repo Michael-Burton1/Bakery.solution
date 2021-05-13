@@ -15,11 +15,14 @@ namespace Bakery.Models
       Console.WriteLine("Bread: buy two loaves($5/each) get the thrird one free.");
       Console.WriteLine("How Many Loaves of bread would you like to order?");
       int numberOfOrderedLoaves= int.Parse(Console.ReadLine());
+      Bread myBread = new(numberOfOrderedLoaves);
       Console.WriteLine("Pastries: 1 for $2 or 3 for $5");
       Console.WriteLine("How many pastries would you like to order?");
+
       int numberOfOrderedPastries= int.Parse(Console.ReadLine());
-      int costForBread = int.BreadCost(numberOfOrderedLoaves);
-      int costForPastries = int.PastryCost(numberOfOrderedPastries);
+      Pastry myPastry = new(numberOfOrderedPastries);
+      int costForBread = myBread.BreadTotal(numberOfOrderedLoaves);
+      int costForPastries = myPastry.PastryTotal(numberOfOrderedPastries);
       int tip= 250;
       int total=tip +costForBread+ costForPastries;
       Console.WriteLine("Thank you for your order.");
